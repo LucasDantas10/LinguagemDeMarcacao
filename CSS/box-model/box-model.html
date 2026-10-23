@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;            
+            padding: 0;
+        }
+        .cupom-gamer{
+            /* Delimitar a largura maxima */
+            width: 250px;
+            background-color: #fef9c3;
+            /* 20px cima/baixo e 30px direita/esquerda */
+            padding: 20px 30px;
+            /* solid (linha solida) dashed (linha tracejada) e dotted (linha tracejada) */
+            border: 3px dashed #e11d48;
+            /* A distancia do elemento em relação as outras tags */
+            margin: 25px auto;
+           
+        }
+        .btn-gamer{
+            /* Permite que o link aceite padding e largura com segurança */
+            display: inline-block;
+            background-color: #6c5ce7;
+            color: white;
+            /* Retira o sublinhado do link */
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            &:hover{
+                background-color: #8174f2;
+                transform: translateY(-3px);
+            }
+        }
+        .btn-secundario{
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 700;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            color: #0ea5e9;
+            border: 2px dotted #0ea5e9;
+            transition: all 0.2s ease;
+            &:hover{
+                border: 2px solid #0ea5e9;
+                transform: translateY(-3px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="" class="btn-gamer">Iniciar partida</a>
+    <button class="btn-secundario">Configurações</button>
+    <div class="cupom-gamer">
+        <h3>Cupom: DEV100</h3>
+        <p>Desconto liberado na loja!</p>
+    </div>    
+</body>
+</html>
